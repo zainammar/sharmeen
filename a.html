@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Grid Layout Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+    </header>
+
+    <main>
+        <section class="grid-section row-1 bg-gradient-1">
+            <div class="grid-item grid-item-1">
+                <h2>Full Width Content</h2>
+                <p>This section spans the entire width, perfect for banners or main messages.</p>
+            </div>
+        </section>
+
+        <section class="grid-section row-2 bg-pattern-1">
+            <div class="grid-item grid-item-2">
+                <h2>Two Columns of Fun</h2>
+                <p>Here we have two equally spaced columns for side-by-side content.</p>
+            </div>
+            <div class="grid-item grid-item-3">
+                <h2>More on the Right</h2>
+                <p>Use this for comparisons, features, or related information.</p>
+            </div>
+        </section>
+
+        <section class="grid-section row-3 bg-image-1">
+            <div class="grid-item grid-item-4">
+                <h2>Three Parts</h2>
+                <p>A classic three-column layout for diverse content blocks.</p>
+            </div>
+            <div class="grid-item grid-item-5">
+                <h2>Centered View</h2>
+                <p>Great for showcasing products, services, or team members.</p>
+            </div>
+            <div class="grid-item grid-item-6">
+                <h2>Right Side Content</h2>
+                <p>Each section can have its own unique flair!</p>
+            </div>
+        </section>
+
+        <section class="grid-section row-4 bg-gradient-2">
+            <div class="grid-item grid-item-7">
+                <h2>Four's Company</h2>
+                <p>Ideal for galleries, small product listings, or quick links.</p>
+            </div>
+            <div class="grid-item grid-item-8">
+                <h2>Another Box</h2>
+                <p>Keep things organized and visually appealing.</p>
+            </div>
+            <div class="grid-item grid-item-9">
+                <h2>Third Element</h2>
+                <p>This layout gives you plenty of space for varied content.</p>
+            </div>
+            <div class="grid-item grid-item-10">
+                <h2>Last One!</h2>
+                <p>Easy to add more items with this flexible grid.</p>
+            </div>
+        </section>
+
+        <section class="grid-section row-5 bg-color-1">
+            <div class="grid-item grid-item-11">
+                <h2>Side Column</h2>
+                <p>A small column.</p>
+            </div>
+            <div class="grid-item grid-item-12">
+                <h2>Main Feature Area</h2>
+                <p>This column is double the width, highlighting important content.</p>
+            </div>
+            <div class="grid-item grid-item-13">
+                <h2>Another Small Column</h2>
+                <p>For secondary information.</p>
+            </div>
+            <div class="grid-item grid-item-14">
+                <h2>Final Slice</h2>
+                <p>Another small bit.</p>
+            </div>
+        </section>
+
+        <section class="grid-section row-6 bg-pattern-2">
+            <div class="grid-item grid-item-15">
+                <h2>Narrow Part</h2>
+                <p>Left side.</p>
+            </div>
+            <div class="grid-item grid-item-16">
+                <h2>Wider Center</h2>
+                <p>This section is thrice the width of the others. Perfect for a blog post or detailed description!</p>
+            </div>
+            <div class="grid-item grid-item-17">
+                <h2>Small Right</h2>
+                <p>Right side.</p>
+            </div>
+        </section>
+
+        <section class="grid-section row-7 bg-image-2">
+            <div class="grid-item grid-item-18">
+                <h2>Thin Left</h2>
+                <p>Content.</p>
+            </div>
+            <div class="grid-item grid-item-19">
+                <h2>Mid-Left Section</h2>
+                <p>Double width.</p>
+            </div>
+            <div class="grid-item grid-item-20">
+                <h2>Mid-Right Section</h2>
+                <p>Another double width.</p>
+            </div>
+            <div class="grid-item grid-item-21">
+                <h2>Thin Right</h2>
+                <p>Content.</p>
+            </div>
+        </section>
+
+        <section class="grid-section row-8 bg-gradient-3">
+            <div class="grid-item grid-item-22">
+                <h2>Half & Half Left</h2>
+                <p>Equal split for a balanced look.</p>
+            </div>
+            <div class="grid-item grid-item-23">
+                <h2>Half & Half Right</h2>
+                <p>Two sections, same size.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> Grid Explorer. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script> -
+    <!-- Script.js can be linked here if you still want its functionality -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
+
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>

@@ -9,6 +9,8 @@ body {
     background: linear-gradient(135deg, #ffeef8 0%, #ffe4f3 50%, #ffd9ef 100%);
     min-height: 100vh;
     padding: 20px;
+    line-height: 1.5;
+
 }
 
 .container {
@@ -480,70 +482,7 @@ footer {
   
  
 
-
-  /* Desktop View */
-  @media screen and (min-width: 768px) {
-  
-    /* 1 column, 1 row (remains the same) */
-    .row-1 {
-        grid-template-columns: 1fr;
-       
-    }
-  
-    /* 2 columns, 1 row */
-    .row-2 {
-        grid-template-columns: 1fr 1fr;
-        
-        
-    }
-  
-    /* 3 columns, 1 row */
-    .row-3 {
-        grid-template-columns: 1fr 1fr 1fr;
-       
-    }
-  
-    /* 4 columns, 1 row */
-    .row-4 {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-       
-    }
-  
-    /* 5 columns, 1 row */
-    .row-5 {
-      grid-template-columns: 1fr 2fr 1fr 1fr;
-     
-  }
-
-      /*6 columns, 1 row */
-      .row-6 {
-        grid-template-columns: 1fr 3fr 1fr;
-       
-    }
-
-        /*6 columns, 1 row */
-        .row-7 {
-          grid-template-columns: 1fr 2fr 2fr 1fr;
-         
-      }
-
-       /*6 columns, 1 row */
-       .row-8 {
-        grid-template-columns: 2fr 2fr;
-       
-    }
-
-
-  }
-  
-  
-
-   
-  .grid-item-1 {
-    padding:10px;
-    text-align: center;  
-  }
-  
+c
 
   .hr-1{
     border: 5px solid #E4B1F0;
@@ -556,9 +495,7 @@ footer {
     border: 0;   height: 3px; background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(228, 177, 240), rgba(255, 0, 0, 0));
    }
 
-
-
-   .btn-5 {
+.btn-5 {
     width: 130px;
     height: 40px;
     line-height: 42px;
@@ -599,3 +536,89 @@ footer {
     transition:800ms ease all;
   }
   
+
+  .text-1{
+    font-family: cursive;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+  }
+
+
+
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
+
+
+
+
+/* CSS */
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
